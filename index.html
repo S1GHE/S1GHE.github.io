@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
 </head>
 <body>
     <div class="container">
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="p-5 mb-4 bg-success rounded-3">
             <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Сдача проекта</h1>
-                <p class="col-md-8">Хотим обратить ваше внимание, на то что установка времени происходит один раз</p>
+                <h1 class="display-5 fw-bold text-color-white">Сдача проекта</h1>
+                <p class="col-md-8 text-color-white">Хотим обратить ваше внимание, на то что установка времени
+                    для сдачи документа происходит один раз</p>
             </div>
         </div>
-        <h1 id="name">Ваш профиль</h1>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Форма для заполения</h1>
+                <p class="col-md-8">Здесь вам необходимо выбрать дату сдачи ваших документов</p>
+                <form>
+                    <h2>Основная профессия</h2>
+                    <input type="date" class="col-12">
+                </form>
+            </div>
+        </div>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
