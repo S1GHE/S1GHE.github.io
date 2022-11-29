@@ -8,3 +8,17 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.btn-green{
+    background-color: #198754;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.btn-green:hover{
+    background-color: #198756;
+    color: #fff;
+    border-radius: 5px;
+    border-color: transparent;
+}
