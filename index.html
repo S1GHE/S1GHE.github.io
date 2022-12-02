@@ -21,57 +21,55 @@
             <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Форма для заполения</h1>
                 <p class="col-md-8">Здесь вам необходимо выбрать дату сдачи ваших документов</p>
-                <form>
+                <form onsubmit="return valudate_from();">
                     <div class="mr-top-bot">
                         <label>1. Основная профессия</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document1">
                     </div>
                     <div class="mr-top-bot">
                         <label>2. Стропальщик (смежная профессия)</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document2">
                     </div>
                     <div class="mr-top-bot">
                         <label>3. АПРС</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document3">
                     </div>
                     <div class="mr-top-bot">
-                        <label>4. Подготовительное работы по ОГБ, 3ГБ</label>
-                        <input type="date" class="col-12">
+                        <label>4. Подготовительные работы по ОГБ, 3ГБ</label>
+                        <input type="date" class="col-12 date" id="document4">
                     </div>
                     <div class="mr-top-bot">
-                        <label>5. Подготовка работников первой группы выполняющих работы на высоте</label>
-                        <input type="date" class="col-12">
+                        <label>
+                            5. Подготовка работников первой группы выполняющих работы на высоте
+                        </label>
+                        <input type="date" class="col-12 date" id="document5">
                     </div>
                     <div class="mr-top-bot">
                         <label>6. Пожарно технический минимум</label>
-                        <input type="date" class="col-12">
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>6. Пожарно технический минимум</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document6">
                     </div>
                     <div class="mr-top-bot">
                         <label>
                             7. Выполнение работ при забуривании муфт
                             ступенчатого цементирования и цементных мостов
                         </label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document7">
                     </div>
                     <div class="mr-top-bot">
                         <span>8. Электробезопасность</span>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document8">
                     </div>
                     <div class="mr-top-bot">
                         <label>9. ГНВП</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document9">
                     </div>
                     <div class="mr-top-bot">
                         <label>10. Обучение и работников вопросам охраны</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document10">
                     </div>
                     <div class="mr-top-bot">
                         <label>11. Правила использования мегаомметрами ЭСО 202, ЭСО 202-Г</label>
-                        <input type="date" class="col-12">
+                        <input type="date" class="col-12 date" id="document11">
                     </div>
                     <div class="mr-top-bot">
                         <button class="col-12 btn-green" type="submit">Отправить</button>

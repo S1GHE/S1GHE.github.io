@@ -25,3 +25,7 @@ label{
     border-radius: 5px;
     border-color: transparent;
 }
+.date{
+    border: 1px solid black;
+    border-radius: 2px;
+}
