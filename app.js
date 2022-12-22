@@ -2,35 +2,42 @@ let telegramAPI = window.Telegram.WebApp;
 
 telegramAPI.expand();
 
-let name_user = document.getElementById("name");
-name_user.innerText = `${telegramAPI.initDataUnsafe.user.first_name}`;
 
-
-function valudate_from(){
-    let document1 = document.getElementById("document1").value;
-    let document2 = document.getElementById("document2").value;
-    let document3 = document.getElementById("document3").value;
-    let document4 = document.getElementById("document4").value;
-    let document5 = document.getElementById("document5").value;
-    let document6 = document.getElementById("document6").value;
-    let document7 = document.getElementById("document7").value;
-    let document8 = document.getElementById("document8").value;
-    let document9 = document.getElementById("document9").value;
-    let document10 = document.getElementById("document10").value;
-    let document11 = document.getElementById("document11").value;
-
-    if(document1 == ""){
-        return false;
+function valudate_from() {
+    if (document.getElementById('document1').value == '') {
+        document.getElementById('document1-s').style.display = 'block';
+        if (document.getElementById('document2').value == '') {
+            document.getElementById('document2-s').style.display = 'block';
+            if (document.getElementById('document3').value == '') {
+                document.getElementById('document3-s').style.display = 'block';
+                if (document.getElementById('document4').value == '') {
+                    document.getElementById('document4-s').style.display = 'block';
+                    if (document.getElementById('document5').value == '') {
+                        document.getElementById('document5-s').style.display = 'block';
+                        if (document.getElementById('document6').value == '') {
+                            document.getElementById('document6-s').style.display = 'block';
+                            if (document.getElementById('document7').value == '') {
+                                document.getElementById('document7-s').style.display = 'block';
+                                if (document.getElementById('document8').value == '') {
+                                    document.getElementById('document8-s').style.display = 'block';
+                                    if (document.getElementById('document9').value == '') {
+                                        document.getElementById('document9-s').style.display = 'block';
+                                        if (document.getElementById('document10').value == '') {
+                                            document.getElementById('document10-s').style.display = 'block';
+                                            if (document.getElementById('document11').value == '') {
+                                                document.getElementById('document11-s').style.display = 'block';
+                                            } else {
+                                                return true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
-    if (document2 ==""){
-        return false;
-    }
-
-    if (document3 == ""){
-        return false
-    }
-
-
-    return true;
+    return false;
 }
