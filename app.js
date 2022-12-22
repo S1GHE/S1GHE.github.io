@@ -6,13 +6,11 @@ telegramAPI.expand();
 function valudate_from() {
     if (document.getElementById('document1').value != '') {
         document.getElementById('document1-s').style.display = 'block';
-        telegramAPI.MainButton.setText('вы выбрали первый документ')
-        telegramAPI.MainButton.show();
+        // telegramAPI.MainButton.setText('вы выбрали первый документ')
+        // telegramAPI.MainButton.show();
         Telegram.WebApp.onEvent('mainButtonCliked', function () {
             telegramAPI.sendData(`${document.getElementById('document1').value}`)
         })
-        telegramAPI.sendData(`${document.getElementById('document1').value}
-        ${document.getElementById('document1').value}`)
         if (document.getElementById('document2').value == '') {
             document.getElementById('document2-s').style.display = 'block';
             if (document.getElementById('document3').value == '') {
