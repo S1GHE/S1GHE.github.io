@@ -4,8 +4,11 @@ telegramAPI.expand();
 
 
 function valudate_from() {
-    if (document.getElementById('document1').value == '') {
+    if (document.getElementById('document1').value != '') {
         document.getElementById('document1-s').style.display = 'block';
+        return true;
+        telegramAPI.sendData(`${document.getElementById('document1').value},
+        ${document.getElementById('document1').value}`)
         if (document.getElementById('document2').value == '') {
             document.getElementById('document2-s').style.display = 'block';
             if (document.getElementById('document3').value == '') {
@@ -27,8 +30,6 @@ function valudate_from() {
                                             if (document.getElementById('document11').value == '') {
                                                 document.getElementById('document11-s').style.display = 'block';
                                             } else {
-                                                telegramAPI.sendData(`${document.getElementById('document1').value},
-                                                ${document.getElementById('document1').value}`)
                                                 return true;
                                             }
                                         }
