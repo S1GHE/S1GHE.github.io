@@ -1,7 +1,7 @@
 const telegramAPI = window.Telegram.WebApp;
 telegramAPI.expand();
 
-telegramAPI.MainButton.hide();
+// telegramAPI.MainButton.hide();
 telegramAPI.MainButton.textColor = '#FFFFFF';
 telegramAPI.MainButton.color = '#198754';
 
