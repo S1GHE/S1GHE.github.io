@@ -21,5 +21,5 @@ telegramAPI.MainButton.setText('Отправить');
 telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
-    telegramAPI.sendData('1');
+    telegramAPI.sendData(dict_doc);
 });
