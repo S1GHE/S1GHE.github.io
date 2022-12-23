@@ -22,6 +22,9 @@ telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
     if (document.getElementById('document1').value != ''){
+        dict_doc[0] = document.getElementById('document1').value;
         telegramAPI.sendData(`${dict_doc},`);
+    }else {
+        telegramAPI.sendData('empty');
     }
 });
