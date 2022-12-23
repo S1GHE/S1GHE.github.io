@@ -6,11 +6,15 @@ telegramAPI.MainButton.textColor = '#FFFFFF';
 telegramAPI.MainButton.color = '#198754';
 
 
-let array_value = [];
+let dict_doc = {
+    'document1': ''
+}
+console.log(dict_doc)
 
 function validate_from() {
     if (document.getElementById('document1').value != '') {
-        array_value.push(document.getElementById('document1').value);
+        dict_doc.document1 = document.getElementById('document1').value
+        console.log(dict_doc)
     }
     return false;
 }
@@ -19,5 +23,5 @@ telegramAPI.MainButton.setText('Отправить');
 telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
-    telegramAPI.sendData(array_value);
+    telegramAPI.sendData(dict_doc);
 });
