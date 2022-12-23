@@ -7,15 +7,12 @@ telegramAPI.MainButton.color = '#198754';
 
 
 let dict_doc = {
-    'document1': ''
+    'document1': '',
 }
-console.log(dict_doc.document1)
 
 function validate_from() {
     if (document.getElementById('document1').value != '') {
-        dict_doc.document1 = document.getElementById('document1').value
-        console.log(dict_doc.document1);
-        telegramAPI.sendData(dict_doc);
+        dict_doc.document1 = document.getElementById('document1').value;
     }
     return false;
 }
