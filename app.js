@@ -6,8 +6,6 @@ telegramAPI.expand();
 function valudate_from() {
     if (document.getElementById('document1').value != '') {
         document.getElementById('document1-s').style.display = 'block';
-        telegramAPI.MainButton.setText('вы выбрали первый документ')
-        telegramAPI.MainButton.show();
         Telegram.WebApp.onEvent('mainButtonCliked', function () {
             telegramAPI.sendData(`${document.getElementById('document1').value}`)
         })
