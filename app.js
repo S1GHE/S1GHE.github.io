@@ -15,6 +15,8 @@ function validate_from() {
     if (document.getElementById('document1').value != '') {
         dict_doc.document1 = document.getElementById('document1').value
         console.log(dict_doc.document1)
+        console.log(dict_doc)
+        alert(dict_doc.document1)
     }
     return false;
 }
@@ -24,5 +26,5 @@ telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
     alert(dict_doc.document1)
-    telegramAPI.sendData(dict_doc.document1);
+    telegramAPI.sendData(dict_doc);
 });
