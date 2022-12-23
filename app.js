@@ -19,6 +19,5 @@ telegramAPI.MainButton.setText('Отправить');
 telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
-    alert('aaa');
     telegramAPI.sendData(array_value);
 });
