@@ -1,12 +1,11 @@
 const telegramAPI = window.Telegram.WebApp;
 telegramAPI.expand();
 
-telegramAPI.MainButton.textColor = '#FFFFFF'
-telegramAPI.MainButton.color = '#198754'
+telegramAPI.MainButton.hide();
+telegramAPI.MainButton.textColor = '#FFFFFF';
+telegramAPI.MainButton.color = '#198754';
 
 let array_value = [];
-
-telegramAPI.MainButton.hide();
 
 function validate_from() {
     if (document.getElementById('document1').value != '') {
