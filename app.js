@@ -7,7 +7,7 @@ telegramAPI.MainButton.color = '#198754';
 
 
 let dict_doc = {
-    'document1': ''
+    document1: ''
 }
 
 function validate_from() {
