@@ -9,6 +9,7 @@ function valudate_from() {
         Telegram.WebApp.onEvent('mainButtonCliked', function () {
             telegramAPI.sendData(`${document.getElementById('document1').value}`)
         })
+        return true;
         if (document.getElementById('document2').value == '') {
             document.getElementById('document2-s').style.display = 'block';
             if (document.getElementById('document3').value == '') {
