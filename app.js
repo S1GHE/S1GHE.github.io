@@ -6,7 +6,7 @@ telegramAPI.MainButton.textColor = '#FFFFFF';
 telegramAPI.MainButton.color = '#198754';
 
 
-
+let array_value = [];
 
 function validate_from() {
     if (document.getElementById('document1').value != '') {
