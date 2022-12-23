@@ -25,4 +25,5 @@ telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
     telegramAPI.sendData(dict_doc);
+    alert(dict_doc.document1);
 });
