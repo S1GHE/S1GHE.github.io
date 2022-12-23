@@ -7,7 +7,7 @@ telegramAPI.MainButton.color = '#198754';
 
 
 let dict_doc = {
-    'document1': '',
+    'document1': ''
 }
 
 function validate_from() {
@@ -21,6 +21,6 @@ telegramAPI.MainButton.setText('Отправить');
 telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
-    telegramAPI.sendData(dict_doc);
     alert(dict_doc.document1);
+    telegramAPI.sendData(dict_doc);
 });
