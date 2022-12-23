@@ -9,6 +9,7 @@ let array_value = []
 function valudate_from() {
     if (document.getElementById('document1').value != '') {
         array_value.push(document.getElementById('document1').value)
+        console.log(array_value);
     }
     return false;
 }
@@ -17,5 +18,5 @@ telegramAPI.MainButton.setText('Отправить');
 telegramAPI.MainButton.show();
 
 Telegram.WebApp.onEvent('mainButtonCliked', function () {
-    telegramAPI.sendData(`${array_value}`);
+    telegramAPI.sendData(array_value);
 });
