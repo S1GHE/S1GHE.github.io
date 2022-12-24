@@ -9,14 +9,19 @@ telegramAPI.MainButton.color = '#198754';
 let dict_doc = []
 
 function validate_from() {
-    var docs = document.getElementsByClassName('documents');
-    var docs_howers = document.getElementsByClassName('documents-error');
-    for(var i = 0; i < docs.length; i++){
+    let docs = document.getElementsByClassName('documents');
+    let docs_howers = document.getElementsByClassName('documents-error');
+    for(let i = 0; i < docs.length; i++){
         if(docs[i].value === '')
             docs_howers[i].style.display = 'block';
         else
             docs_howers[i].style.display = 'none';
         dict_doc[i] = docs[i].value;
+    }
+
+    for(let j = 0; j < dict_doc.length; j++){
+        if (dict_doc[j] == '')
+            return false;
     }
     telegramAPI.MainButton.setText('Отправить');
     telegramAPI.MainButton.show();
