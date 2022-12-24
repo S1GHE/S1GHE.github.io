@@ -9,89 +9,100 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="container">
-        <div class="p-5 mb-4 bg-success rounded-3 mr-1">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold text-color-white">Сдача проекта</h1>
-                <h1 class="display-5 fw-bold text-color-white">1.4</h1>
-                <p class="col-md-8 text-color-white">Хотим обратить ваше внимание, на то что установка времени
-                    для сдачи документа происходит один раз</p>
-            </div>
-        </div>
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Форма для заполения</h1>
-                <p class="col-md-8">Здесь вам необходимо выбрать дату сдачи ваших документов</p>
-                <form onsubmit="return validate_from();">
-                    <div class="mr-top-bot">
-                        <label>1. Основная профессия</label>
-                        <input type="date" class="col-12 date" id="document1">
-                        <span class="warning-text" id="document1-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>2. Стропальщик (смежная профессия)</label>
-                        <input type="date" class="col-12 date" id="document2">
-                        <span class="warning-text" id="document2-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>3. АПРС</label>
-                        <input type="date" class="col-12 date" id="document3">
-                        <span class="warning-text" id="document3-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>4. Подготовительные работы по ОГБ, 3ГБ</label>
-                        <input type="date" class="col-12 date" id="document4">
-                        <span class="warning-text" id="document4-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>
-                            5. Подготовка работников первой группы выполняющих работы на высоте
-                        </label>
-                        <input type="date" class="col-12 date" id="document5">
-                        <span class="warning-text" id="document5-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>6. Пожарно технический минимум</label>
-                        <input type="date" class="col-12 date" id="document6">
-                        <span class="warning-text" id="document6-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>
-                            7. Выполнение работ при забуривании муфт
-                            ступенчатого цементирования и цементных мостов
-                        </label>
-                        <input type="date" class="col-12 date" id="document7">
-                        <span class="warning-text" id="document7-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <span>8. Электробезопасность</span>
-                        <input type="date" class="col-12 date" id="document8">
-                        <span class="warning-text" id="document8-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>9. ГНВП</label>
-                        <input type="date" class="col-12 date" id="document9">
-                        <span class="warning-text" id="document9-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>10. Обучение и работников вопросам охраны</label>
-                        <input type="date" class="col-12 date" id="document10">
-                        <span class="warning-text" id="document10-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <label>11. Правила использования мегаомметрами ЭСО 202, ЭСО 202-Г</label>
-                        <input type="date" class="col-12 date" id="document11">
-                        <span class="warning-text" id="document11-s">Внимание! Вы не заполнили данное поле</span>
-                    </div>
-                    <div class="mr-top-bot">
-                        <button class="col-12 btn-green" type="submit">Проверить данные</button>
-                    </div>
-
-                </form>
-            </div>
+<div class="container">
+    <div class="p-5 mb-4 bg-success rounded-3 mr-1">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold text-color-white">Сдача проекта</h1>
+            <h1 class="display-5 fw-bold text-color-white">1.3</h1>
+            <p class="col-md-8 text-color-white">Хотим обратить ваше внимание, на то что установка времени
+                для сдачи документа происходит один раз</p>
         </div>
     </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="app.js"></script>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Форма для заполения</h1>
+            <p class="col-md-8">Здесь вам необходимо выбрать дату сдачи ваших документов</p>
+            <form onsubmit="return validate_from();">
+                <div class="mr-top-bot">
+                    <label>1. Основная профессия</label>
+                    <input type="date" class="col-12 date documents" id="document1">
+                    <span class="warning-text documents-error"
+                          id="document1-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>2. Стропальщик (смежная профессия)</label>
+                    <input type="date" class="col-12 date documents" id="document2">
+                    <span class="warning-text documents-error"
+                          id="document2-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>3. АПРС</label>
+                    <input type="date" class="col-12 date documents" id="document3">
+                    <span class="warning-text documents-error"
+                          id="document3-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>4. Подготовительные работы по ОГБ, 3ГБ</label>
+                    <input type="date" class="col-12 date documents" id="document4">
+                    <span class="warning-text documents-error"
+                          id="document4-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>
+                        5. Подготовка работников первой группы выполняющих работы на высоте
+                    </label>
+                    <input type="date" class="col-12 date documents" id="document5">
+                    <span class="warning-text documents-error"
+                          id="document5-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>6. Пожарно технический минимум</label>
+                    <input type="date" class="col-12 date documents" id="document6">
+                    <span class="warning-text documents-error"
+                          id="document6-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>
+                        7. Выполнение работ при забуривании муфт
+                        ступенчатого цементирования и цементных мостов
+                    </label>
+                    <input type="date" class="col-12 date documents" id="document7">
+                    <span class="warning-text documents-error"
+                          id="document7-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <span>8. Электробезопасность</span>
+                    <input type="date" class="col-12 date documents" id="document8">
+                    <span class="warning-text documents-error"
+                          id="document8-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>9. ГНВП</label>
+                    <input type="date" class="col-12 date documents" id="document9">
+                    <span class="warning-text documents-error"
+                          id="document9-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>10. Обучение и работников вопросам охраны</label>
+                    <input type="date" class="col-12 date documents" id="document10">
+                    <span class="warning-text documents-error"
+                          id="document10-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <label>11. Правила использования мегаомметрами ЭСО 202, ЭСО 202-Г</label>
+                    <input type="date" class="col-12 date documents" id="document11">
+                    <span class="warning-text documents-error"
+                          id="document11-s">Внимание! Вы не заполнили данное поле</span>
+                </div>
+                <div class="mr-top-bot">
+                    <button class="col-12 btn-green" type="submit">Проверить данные</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
