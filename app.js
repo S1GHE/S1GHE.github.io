@@ -51,5 +51,5 @@ function validate_from() {
 // }
 
 Telegram.WebApp.onEvent('mainButtonClicked', function () {
-    telegramAPI.sendData(dict_doc);
+    telegramAPI.sendData(`${dict_doc[0]}, ${dict_doc[1]}`);
 });
