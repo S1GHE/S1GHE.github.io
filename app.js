@@ -19,18 +19,8 @@ function validate_from() {
         dict_doc[i] = docs[i].value;
     }
 
-    for (let j = 0; j < dict_doc.length; j++) {
-
-        if (dict_doc[j] == '') {
-            let trues = true;
-            break;
-        }
-    }
-    if (trues === false) {
-        telegramAPI.MainButton.setText('Отправить');
-        telegramAPI.MainButton.show();
-
-    }
+    telegramAPI.MainButton.setText('Отправить');
+    telegramAPI.MainButton.show();
     return false;
 }
 
